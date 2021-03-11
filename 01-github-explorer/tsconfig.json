@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    //adiciona funcionalidades com a dom
+    "lib": ["dom", "dom.iterable", "esnext"],                                   
+    //permiter tanto ter tanto arquivos javascript como typescript
+    "allowJs": true,                             
+    //Indica que estamos usamos jsx(javascript XML) utilizando html dentro do javascript
+    "jsx": "react-jsx",    
+    //caso execute a buid da aplicação ele não emitir o codigo dela                   
+    "noEmit": true,  
+    //É um modo de lidar com erros(Pesquisar Strict Javascript)                            
+    "strict": true,                                 
+    //Adiciona a possibilidade de importar arquivos json
+    "resolveJsonModule": true,
+    "moduleResolution": "node", 
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,        
+    "esModuleInterop": true,                        
+    "skipLibCheck": true,                           
+    "forceConsistentCasingInFileNames": true        
+  },
+   //Onde o codigo da aplicação vai ta
+  "include": ["src"]
+}

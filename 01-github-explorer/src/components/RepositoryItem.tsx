@@ -1,4 +1,14 @@
-export function RepositoryItem(props) {
+interface RepositoryItemProps {
+  //caso não seja obrigatoria a informação é so add o interrogação
+  //  repository?: {}
+  repository: {
+    name: string;
+    description: string;
+    html_url: string;
+  }
+}
+
+export function RepositoryItem(props: RepositoryItemProps) {
   return (
     <li>
     {/* usando o interrogação dessa forma
